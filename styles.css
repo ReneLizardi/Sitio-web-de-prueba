@@ -1,0 +1,161 @@
+/*-----------------------------------------HEADER------------------------------------------*/
+header {
+    background-color: #8f0000;
+}
+
+/*----------------------------------------FIN-HEADER---------------------------------------*/
+body {
+    transition: all 1.5s ease;
+}
+
+/*---------------------------------------ETIQUETAS-----------------------------------------*/
+h1,h3 {
+    text-shadow: 0 0 30px #f4f0f0, 0 0 30px #f4f0f0;
+}
+
+hr {
+    border-color: rgb(170, 17, 17);
+    height: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------FIN-ETIQUETAS---------------------------------------*/
+
+/*--------------------------------------CONTENIDOS-----------------------------------------*/
+.contenido1, .contenido2, .contenido3, .contenido4, .contenido5, .contenido6, p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contenido6 h2 {
+    text-align: center;
+    width: 100%;
+}
+
+/*----------------------------------FIN-CONTENIDOS-----------------------------------------*/
+
+/*-------------------------------------DIVS------------------------------------------------*/
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.posicionlogo {
+    position: static;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 140px;
+    padding-right: 15px;
+}
+
+.logo {
+    border-radius: 20%;
+}
+
+.titulos1 {
+    flex-grow: 1;
+}
+
+/*----------------------------------FIN-DIVS------------------------------------------------*/
+
+/*-------------------------------------MENU------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+nav {
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+    background-color: #882e2e;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover {
+    border-radius: 10px;
+    background-color: rgb(224, 83, 83);
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+    border-radius: 10px;
+}
+
+.menu-vertical li:hover {
+    background-color: rgb(224, 83, 83);
+    border-radius: 10px;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+/*------------------------------------FIN-MENU---------------------------------------------*/
+
+/*--------------------------------------FOOTER---------------------------------------------*/
+footer {
+    background-color: #8f0000;
+}
+
+/*-----------------------------------FIN-FOOTER--------------------------------------------*/
+
+/*----------------------------------------IMPUT--------------------------------------------*/
+#toggle {
+    display: none;
+}
+
+#label_toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+/*-----------------------------------FIN-IMPUT--------------------------------------------*/
+
+/*-----------------------------------MODO-OSCURO------------------------------------------*/
+.dark {
+    background-color: #333;
+    color: white;
+    transition: all 1.5s ease;
+}
+
+.dark hr {
+    color: #505050;
+}
+
+/*-------------------------------FIN-MODO-OSCURO------------------------------------------*/
